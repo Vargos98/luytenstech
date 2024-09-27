@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className='flex gap-12 mr-10 items-center'>
         <div className='w-[1px] h-10 bg-zinc-700'></div>
-        <a href="/Home"><span className='inline-block w-2 h-2 bg-green-500 rounded-full ' style={{ boxShadow: "0 0 0.65em #00ff19" }}></span> Home</a>
+        <a href="/Home"><span className='inline-block w-2 h-2 bg-green-500 rounded-full flex-nowrap' style={{ boxShadow: "0 0 0.65em #00ff19" }}></span> Home</a>
         <a href="/Home">About</a>
         <a href="/Home">Services</a>
         <a href="/Home">Careers</a>
