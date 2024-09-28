@@ -1,9 +1,13 @@
 import React from 'react'
-import Navbar from '../src/components/Navbar'
+
+import Navbar from "./components/Navbar"
+import Work from "./components/Work"
+
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="w-full h-screen bg-zinc-900 text-white">
+    <Navbar/>
+    <Work/>
     </div>
   )
 }
