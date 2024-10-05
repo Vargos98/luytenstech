@@ -5,23 +5,43 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // extend: {
-    //   animation: {
-    //     'slide-in': 'slideIn 0.5s ease forwards',
-    //   },
-    //   keyframes: {
-    //     slideIn: {
-    //       '0%': {
-    //         transform: 'translateX(20px)',
-    //         opacity: '0',
-    //       },
-    //       '100%': {
-    //         transform: 'translateY(0)',
-    //         opacity: '1',
-    //       },
-    //     },
-    //   },
-    // }, // <-- Add a comma here
+    extend: {
+      keyframes: {
+        fade: {
+          '0%': {
+            fontFamily: 'plain light',
+            '-webkit-text-stroke': '1px #fff',
+            color: '#fff',
+            fontWeight: '500',
+            opacity: '0',
+          },
+          '48%': {
+            fontFamily: 'plain light',
+            '-webkit-text-stroke': '1px #fff',
+            color: '#fff',
+            fontWeight: '500',
+            opacity: '1',
+          },
+          '50%': {
+            fontFamily: 'silk serif',
+            '-webkit-text-stroke': '1px #fff',
+            color: 'transparent',
+            fontWeight: '500',
+            opacity: '0',
+          },
+          '100%': {
+            fontFamily: 'silk serif',
+            '-webkit-text-stroke': '1px #fff',
+            color: 'transparent',
+            fontWeight: '500',
+            opacity: '1',
+          },
+        },
+      },
+      animation: {
+        fade: 'fade 5s infinite',
+      },
+    },
   },
   plugins: [],
 }
