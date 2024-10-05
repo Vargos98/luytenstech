@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <div className="max-w-screen-xl py-6 bg-zinc-900 mx-auto flex items-center justify-between border-b-[1px] border-zinc-700 text-white">
       <div className='flex items-center'>
-        <img className="w-20  rounded-full cursor-pointer "  src={Logo} alt="" />
-        <p className='text-2xl cursor-pointer'>Luytens Technology Solutions</p>
+        <img className="w-20  rounded-full cursor-pointer " src={Logo} alt="" />
+        <p className='text-[1.5vw] cursor-pointer'>Luytens Technology Solutions</p>
       </div>
       <div className='flex gap-12 mr-10 items-center'>
         <div className='w-[1px] h-10 bg-zinc-700'></div>
@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="/Home" className='hover:text-gray-400 transition-all duration-[300ms] ease-in-out'>Contact</a>
       </div>
       <div>
-        <Button/>
+        <Button />
       </div>
     </div>
   )

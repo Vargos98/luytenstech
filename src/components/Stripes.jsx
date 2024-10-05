@@ -26,7 +26,7 @@ const Stripes = () => {
   ];
 
   return (
-    <div className='flex items-center bg-white opacity-70 '>
+    <div className='flex items-center bg-white opacity-80 border-t-2 border-b-2 border-zinc-900'>
       {data.map((elem, index) => (
         <Stripe key={index} val={elem.url} />
       ))}

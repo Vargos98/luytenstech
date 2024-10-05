@@ -56,7 +56,7 @@ const Work = () => {
                 key={index}
                 src={elem.url}
                 alt={elem.url}
-                className="w-[15vw] rounded-md absolute transition-all duration-[1500ms] ease-in-out"
+                className="w-[16vw] rounded-md absolute transition-all duration-[1500ms] ease-in-out"
                 style={{
                   top: elem.top,
                   left: elem.left,
