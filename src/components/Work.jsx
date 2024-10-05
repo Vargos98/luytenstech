@@ -1,11 +1,11 @@
 // import React, { useEffect, useState } from 'react';
 import React, { useEffect, useState } from 'react';
-import One from '../assets/1.png';
-import Two from '../assets/2.png';
-import Three from '../assets/3.png';
-import Four from '../assets/4.png';
-import Five from '../assets/5.png';
-import Six from '../assets/6.png';
+import One from '../assets/Static/1.png';
+import Two from '../assets/Static/2.png';
+import Three from '../assets/Static/3.png';
+import Four from '../assets/Static/4.png';
+import Five from '../assets/Static/5.png';
+import Six from '../assets/Static/6.png';
 
 const Work = () => {
   // State for triggering the animation
@@ -27,7 +27,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative mt-3 bg-zinc-900">
       {/* Text area */}
       <div className="max-w-screen-xl mx-auto bg-zinc-900 text-center leading-none relative">
         {/* First paragraph with animation */}
@@ -39,7 +39,7 @@ const Work = () => {
         </p>
         <h1 className="text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out">work</h1>
         <p
-          className={`text-[5vw] leading-none tracking-tight transition-all duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[40%] translate-y-[-50%] opacity-80' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
+          className={`text-[5vw] leading-none tracking-tight transition-all duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[38%] translate-y-[-50%] opacity-80' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
             }`}
         >
           Together.

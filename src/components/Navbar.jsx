@@ -1,5 +1,5 @@
 // import React from 'react'
-import Logo from '../assets/Logo_Luytens.png';
+import Logo from '../assets/Static/Logo_Luytens.png';
 import { Button } from './Button';
 
 const Navbar = () => {
