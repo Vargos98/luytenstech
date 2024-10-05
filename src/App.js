@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="w-full h-screen bg-zinc-900 text-white overflow-x-hidden">
-      {isLoading ? ( // Conditional rendering
+      {isLoading ? ( // Conditional rendering for the Loader first and then loading the remaining components
         <Loader onLoaderComplete={handleLoaderComplete} />
       ) : (
         <>

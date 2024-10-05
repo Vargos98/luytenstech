@@ -37,7 +37,7 @@ const Work = () => {
         >
           Let's
         </p>
-        <h1 className="text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out">work</h1>
+        <h1 className={`text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out`}>work</h1>
         <p
           className={`text-[5vw] leading-none tracking-tight transition-all duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[38%] translate-y-[-50%] opacity-80' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
             }`}
