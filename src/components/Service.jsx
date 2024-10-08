@@ -17,7 +17,7 @@ const Service = ({ data, index }) => {
       </div>
 
       {/* Card section only visible on mobile screens */}
-      <div className='block lg:hidden w-[90%] h-fit mx-auto py-20 text-white bg-zinc-800 rounded-xl'>
+      <div className='block lg:hidden w-[90%] h-fit mx-auto py-20 text-white bg-zinc-800 rounded-xl -mb-28'>
         <div className='flex flex-col w-full h-30 text-center transition-all duration-[1500ms] ease-in-out'>
           <h1 className='text-[8vw] capitalize font-medium mb-10 transition-all duration-[1500ms] ease-in-out underline underline-offset-4 decoration-2 opacity-80 text-wrap'>{title}</h1>
           <img className='w-[90%] mx-auto rounded-lg transition-all duration-[1500ms] ease-in-out' src={one} alt="" />

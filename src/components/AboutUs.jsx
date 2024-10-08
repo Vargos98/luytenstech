@@ -12,17 +12,17 @@ const AboutUs = () => {
     <>
       {/* Desktop View */}
       <div className='hidden lg:block w-full h-screen bg-zinc-900 max-w-screen-xl mx-auto py-40'>
-        <h1 className={`text-[12vw] xl:text-[5vw] leading-none text-nowrap -mt-20 tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-12%] translate-y-[-30%] opacity-100' : 'translate-x-[-36%] opacity-0'}`}>
-          Who <span className='text-orange-600 font-sans font-semibold'>we</span> are ?
+        <h1 className={`text-[12vw] xl:text-[5vw] leading-none text-nowrap -mt-20 lg:mb-20 tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-12%] translate-y-[-30%] opacity-100' : 'translate-x-[-36%] opacity-0'}`}>
+          Who <span className='text-orange-500 font-sans font-semibold'>we</span> are ?
         </h1>
         <div className='flex gap-2'>
           <div className='w-[65%] bg-purple-800 h-[70vh] rounded-2xl hover:bg-purple-700 hover:scale-105 transition-all duration-300 ease-in-out'>
             <h1 className='text-[2.5vw] text-wrap p-4 text-zinc-100 font-semibold tracking-tighter'>
-              Connecting <span className='text-orange-600 font-sans font-semibold '>You</span> with Exceptional Talent and Ideal Matches.
+              Connecting <span className='text-orange-500 font-sans font-semibold '>You</span> with Exceptional Talent and Ideal Matches.
             </h1>
             <div className='w-[90%] h-72'>
               <p className='text-[1.5vw] ml-5 mt-5 font-sans font-medium'>
-                At <span className='text-orange-600 font-sans font-bold'>Luytens Technology Solutions</span>, we understand that finding the right talent is crucial for any organization's success. With our extensive network and in-depth industry expertise, we are committed to delivering tailored solutions that precisely match the unique requirements of our clients. Whether you are a multinational corporation seeking skilled professionals or a startup in search of dynamic talent, we have the expertise to fulfill your hiring needs.
+                At <span className='text-orange-500 font-sans font-bold'>Luytens Technology Solutions</span>, we understand that finding the right talent is crucial for any organization's success. With our extensive network and in-depth industry expertise, we are committed to delivering tailored solutions that precisely match the unique requirements of our clients. Whether you are a multinational corporation seeking skilled professionals or a startup in search of dynamic talent, we have the expertise to fulfill your hiring needs.
               </p>
             </div>
           </div>
