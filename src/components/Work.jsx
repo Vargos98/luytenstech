@@ -27,19 +27,19 @@ const Work = () => {
   ];
 
   return (
-    <div className="w-full relative mt-3 bg-zinc-900 mb-52">
+    <div className="w-full relative mt-10 lg:mt-3 bg-zinc-900 mb-64 lg:mb-52">
       {/* Text area */}
       <div className="max-w-screen-xl mx-auto bg-zinc-900 text-center leading-none relative">
         {/* First paragraph with animation */}
         <p
-          className={`text-[5vw] leading-none tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-36%] translate-y-[165%] opacity-80' : 'translate-x-[-36%] opacity-0'
+          className={` text-[6vw] lg:text-[5vw] xl:text-[4.5vw] leading-none tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-36%] translate-y-[165%] opacity-80' : 'translate-x-[-36%] opacity-0'
             }`}
         >
           Let's
         </p>
         <h1 className={`text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out`}>work</h1>
         <p
-          className={`text-[5vw] leading-none tracking-tight transition-all text-orange-500 duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[38%] translate-y-[-50%] opacity-100' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
+          className={`text-[6vw] lg:text-[5vw] xl:text-[4.5vw] leading-none tracking-tight transition-all text-orange-500 duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[38%] translate-y-[-50%] opacity-100' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
             }`}
         >
           Together.

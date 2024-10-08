@@ -12,7 +12,7 @@ const AboutUs = () => {
     <>
       {/* Desktop View */}
       <div className='hidden lg:block w-full h-screen bg-zinc-900 max-w-screen-xl mx-auto py-40'>
-        <h1 className={`text-[12vw] xl:text-[5vw] leading-none text-nowrap -mt-20 tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[2%] translate-y-[-30%] opacity-100' : 'translate-x-[-36%] opacity-0'}`}>
+        <h1 className={`text-[12vw] xl:text-[5vw] leading-none text-nowrap -mt-20 tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-12%] translate-y-[-30%] opacity-100' : 'translate-x-[-36%] opacity-0'}`}>
           Who <span className='text-orange-600 font-sans font-semibold'>we</span> are ?
         </h1>
         <div className='flex gap-2'>
