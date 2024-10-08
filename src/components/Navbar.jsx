@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="/Home" className='hover:text-gray-400 transition-all duration-[300ms] ease-in-out'>Contact</a>
       </div>
       <div>
-        <Button />
+        <Button title="Job Genee"/>
       </div>
     </div>
   )

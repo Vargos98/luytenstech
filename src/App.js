@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import Stripes from "./components/Stripes";
 import AboutUs from './components/AboutUs';
 import Loader from './components/Loader';
+import Services from './components/Services';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true); // State to control loader visibility
@@ -23,6 +24,7 @@ const App = () => {
           <Navbar />
           <Work />
           <Stripes />
+          <Services/>
           <AboutUs />
         </>
       )}
