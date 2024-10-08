@@ -26,7 +26,7 @@ const Stripes = () => {
   ];
 
   return (
-    <div className='flex flex-wrap justify-center items-center bg-white opacity-80 border-t-2 border-b-2 border-zinc-900 py-1 mb-10'>
+    <div className='flex h-fit  flex-wrap justify-center items-center bg-white opacity-80 border-t-2 border-b-2 border-zinc-900 py-1 mb-52 '>
       {data.map((elem, index) => (
         <div key={index} className='m-4'>
           <Stripe val={elem.url} />

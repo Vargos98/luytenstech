@@ -20,7 +20,7 @@ const Services = () => {
 
   return (
     <div>
-    <h1 className={`text-[5vw] mb-20 leading-none tracking-tight transition-all duration-[1500ms] underline underline-offset-4 decoration-2 ${animateText ? 'translate-x-[10%] translate-y-[15%] opacity-100' : 'translate-x-[-36%] opacity-0'
+    <h1 className={`text-[12vw] xl:text-[5vw]  mt-52 mb-24 leading-none  transition-all duration-[1500ms] ${animateText ? 'translate-x-[5%] translate-y-[15%] opacity-100' : 'translate-x-[-36%] opacity-0'
             }`}>Services</h1>
     {services.map((elem, index)=>{
       return <Service data={elem}  key={index}/>
