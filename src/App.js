@@ -6,6 +6,8 @@ import Stripes from "./components/Stripes";
 import AboutUs from './components/AboutUs';
 import Loader from './components/Loader';
 import Services from './components/Services';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 
 const App = () => {
@@ -28,6 +30,9 @@ const App = () => {
           <AboutUs />
           <Services/>
           <Stripes />
+          <Contact />
+          <Footer/>
+
           
          
    
