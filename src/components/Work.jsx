@@ -26,7 +26,7 @@ const Work = () => {
   ];
 
   return (
-    <div className="w-full relative mt-28 lg:mt-3 bg-zinc-900 mb-64 lg:mb-52">
+    <div className="w-full relative mt-28 lg:-mt-5 bg-zinc-900 mb-64 lg:mb-52">
       {/* Text area */}
       <div className="max-w-screen-xl mx-auto bg-zinc-900 text-center leading-none relative">
         {/* First paragraph with animation */}

@@ -5,7 +5,7 @@ import { Button } from './Button';
 const Navbar = () => {
   return (
     <>
-      <div className="max-w-screen-xl py-6 bg-zinc-900 mx-auto flex items-center justify-between border-b-[1px] border-zinc-700 text-white ">
+      <div className="max-w-screen-xl py-4 bg-zinc-900 mx-auto flex items-center justify-between border-b-[1px] border-zinc-700 text-white ">
         {/* Left */}
         <div className='flex items-center'>
           <img className="w-10 lg:w-20  rounded-full cursor-pointer " src={Logo} alt="" />
