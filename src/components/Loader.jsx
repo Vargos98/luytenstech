@@ -1,11 +1,9 @@
-// src/Loader.js
 import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import Navbar from './Navbar';
 import Work from './Work';
 import Stripes from './Stripes';
 import AboutUs from './AboutUs';
-
 
 const Loader = ({ onLoaderComplete }) => {
   const [loaderVisible, setLoaderVisible] = useState(true);
@@ -53,28 +51,27 @@ const Loader = ({ onLoaderComplete }) => {
       {loaderVisible && (
         <div id="loader" className="fixed z-50 w-full h-full bg-black flex flex-col items-center justify-center p-10">
           <div className="line flex items-center justify-start gap-3">
-            <div id="line1-part1" className="flex items-center gap-3 ml-10 opacity-80">
-              <h5 className="text-white text-[3vw] font-bold">00</h5>
-              <h6 className="text-white text-[3vw] font-bold">- 100</h6>
+            <div id="line1-part1" className="flex items-center gap-3 ml-4 lg:ml-10 opacity-80">
+              <h5 className="text-white text-[7vw] lg:text-[3vw] font-bold">00</h5>
+              <h6 className="text-white text-[7vw] lg:text-[3vw] font-bold">- 100</h6>
             </div>
-            <h1 className="text-white text-[6.5vw] font-bold uppercase ml-[-140%] mt-[-50%]">Your</h1>
+            <h1 className="text-white text-[12vw] lg:text-[6.5vw] font-bold uppercase ml-[-68%] lg:ml-[-140%] mt-[-90%] lg:mt-[-50%]">Your</h1>
           </div>
           <div className="line">
-            <h1 className="text-white text-[6.5vw] font-bold uppercase ml-[-10%] mt-[-10%]">Web Experiences</h1>
+            <h1 className="text-white text-[12vw] lg:text-[6.5vw] font-bold uppercase ml-[2%] lg:ml-[-10%] mt-[-30%] lg:mt-[-10%]">Web <span className='text-orange-500 font-serif'>Experiences</span></h1>
           </div>
           <div className="line">
-            <h1 className="text-white text-[6.5vw] font-bold uppercase mt-[-5%]">is loading right</h1>
-            <h2 className="text-white text-[6vw] font-bold uppercase animate-fade ml-[105%] mt-10">Now</h2>
+            <h1 className="text-white text-[12vw] lg:text-[6.5vw] font-semibold uppercase ml-[-8%] mt-[-2%] lg:mt-[-5%]">is loading right</h1>
+            <h2 className="text-white text-[14vw] lg:text-[8vw] font-bold uppercase animate-fade mt-[30%] ml-[50%] lg:ml-[100%]  lg:mt-10">Now</h2>
           </div>
         </div>
       )}
       {!loaderVisible && (
         <div className="main-content pop-out-animation ease-in "> {/* Main content here */}
           {/* Place your main application components here */}
-          
-          <Navbar/>
-          <Work/>
-          <Stripes/>
+          <Navbar />
+          <Work />
+          <Stripes />
           <AboutUs />
         </div>
       )}

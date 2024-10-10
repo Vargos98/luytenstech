@@ -35,7 +35,7 @@ const Stripe = ({ val }) => {
     // Annimation of the stripes
     <div
       ref={ref}
-      className={`min-[16.66%] px-[2.5vw] py-[1.5vh]  border-b-[1.2px] border-zinc-700 flex justify-between items-center overflow-hidden transition-all duration-[1000ms] ease-linear transform  ${
+      className={` min-[16.66%] px-[2.5vw] py-[1.5vh]  flex justify-between items-center overflow-hidden transition-all duration-[1000ms] ease-linear transform  ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
       }`}
     >

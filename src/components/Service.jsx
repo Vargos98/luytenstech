@@ -1,36 +1,40 @@
-import React from 'react'
-import { Button } from './Button'
-import one from '../assets/Static/1.png'
+import React from 'react';
+import { Button } from './Button';
+import one from '../assets/Static/1.png';
 
-const Service = ({ data, index }) => {
+const Service = ({ data }) => {
   const { title, description, live } = data;
-  
+
   return (
-    <div className='w-full py-20 text-white ' index={index}>
-      {/* The above section, visible only on screens larger than mobile */}
-      <div className='hidden lg:flex max-w-screen-xl mx-auto items-center justify-between transition-all duration-[1500ms] ease-in-out'>
-        <h1 className='text-[4vw] capitalize font-medium transition-all duration-[1500ms] ease-in-out opacity-80 '>{title}</h1>
+    <div className='w-full py-20 text-white transition-all duration-[1500ms] ease-in-out'>
+      {/* Desktop View */}
+      <div className='hidden lg:flex max-w-screen-xl mx-auto items-center justify-between'>
+        <h1 className='text-[4vw] capitalize font-medium opacity-80'>{title}</h1>
         <div className='w-1/3'>
           <p className='mb-10'>{description}</p>
           {live && <Button />}
         </div>
       </div>
 
-      {/* Card section only visible on mobile screens */}
-      <div className='block lg:hidden w-[90%] h-fit mx-auto py-20 text-white bg-zinc-800 rounded-xl -mb-28'>
-        <div className='flex flex-col w-full h-30 text-center transition-all duration-[1500ms] ease-in-out'>
-          <h1 className='text-[8vw] capitalize font-medium mb-10 transition-all duration-[1500ms] ease-in-out underline underline-offset-4 decoration-2 opacity-80 text-wrap'>{title}</h1>
-          <img className='w-[90%] mx-auto rounded-lg transition-all duration-[1500ms] ease-in-out' src={one} alt="" />
+      {/* Mobile View */}
+      <div className='block lg:hidden w-[90%] mx-auto py-5 bg-zinc-800 rounded-xl -mb-20'>
+        <div className='text-center'>
+          <h1 className='text-[8vw] capitalize font-medium mb-10 underline underline-offset-4 decoration-2 opacity-80'>
+            {title}
+          </h1>
+          <img className='w-[90%] mx-auto rounded-lg' src={one} alt={title} />
           <div className='p-4 mt-10'>
-            <p className='mb-10 text-start text-[3.5vw] transition-all duration-[1500ms] ease-in-out'>{description}</p>
-            <div className='w-1/2 mx-auto'>
-              {live && <Button />}
-            </div>
+            <p className='mb-10 text-start text-[3.5vw]'>{description}</p>
+            {live && (
+              <div className='w-1/2 mx-auto'>
+                <Button />
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

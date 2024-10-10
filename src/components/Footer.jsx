@@ -4,53 +4,37 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <div className='w-full '>
-     
-      <div className='max-w-screen-xl mx-auto py-10 flex gap-32 mt-20  transition-all duration-[1500ms] ease-in-out'>
-       {/* Left Div */}
-        <div className='basis-1/2 flex items-center'>
-          <img className='lg:w-44 xl:w-44' src={Logo} alt="Luytens Logo" />
-          <h1 className='text-6xl font-semibold tracking-tight text-wrap opacity-90 leading-none'>
+    <div className='w-full bg-zinc-900'>
+
+      <div className='max-w-screen-xl mx-auto py-10 px-4 flex flex-col lg:flex-row gap-10 lg:gap-32 mt-20 transition-all duration-[1500ms] ease-in-out'>
+        {/* Left Div */}
+        <div className='flex flex-col lg:flex-row lg:basis-1/2 items-center lg:items-start'>
+          <img className='w-32 lg:w-44 mb-4 lg:mb-0' src={Logo} alt="Luytens Logo" />
+          <h1 className='text-3xl lg:text-6xl font-medium tracking-tight text-wrap opacity-90 leading-none text-center lg:text-left'>
             Luytens Technology Solutions.
           </h1>
         </div>
 
-        <div className='basis-1/2'>
-          <div>
-            <ul className='flex flex-col gap-8 text-xl text-zinc-100 cursor-pointer transition-all duration-[300ms] ease-in-out  '>
-              <li className='hover:text-zinc-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>Home</li>
-              <li className='hover:text-zinc-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>About</li>
-              <li className='hover:text-zinc-300 transition-all duration-[300ms] ease-in-out hover:scale-110 '>Services</li>
-              <li className='hover:text-zinc-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>Work</li>
-              <li className='hover:text-zinc-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>Contact</li>
-            </ul>
-          </div>
-          <div className='ml-28'>
-            <ul className='flex gap-8 text-lg text-zinc-100 cursor-pointer'>
-              <li className='flex items-center hover:text-blue-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>
-                <FaFacebookF className='text-blue-600 mr-2 ' /> Facebook
-              </li>
-              <li className='flex items-center hover:text-pink-300 transition-all duration-[300ms] ease-in-out hover:scale-110'>
-                <FaInstagram className='text-pink-500 mr-2 ' /> Instagram
-              </li>
-              <li className='flex items-center hover:text-violet-500 transition-all duration-[300ms] ease-in-out hover:scale-110'>
-                <FaLinkedinIn className='text-[#1d4ed8] mr-2' /> LinkedIn
-              </li>
-              <li className='flex items-center hover:text-blue-500 transition-all duration-[300ms] ease-in-out hover:scale-110'>
-                <FaTwitter className='text-blue-400 mr-2' /> Twitter
-              </li>
-            </ul>
-          </div>
+        {/* Right Div */}
+        <div className='lg:basis-1/2 w-full h-fit mt-4 lg:mt-10'>
+          <ul className='flex flex-col gap-4'>
+            <li className='flex items-center text-2xl lg:text-4xl hover:text-violet-500 transition-all duration-[300ms] ease-in-out lg:hover:scale-110 '>
+              <FaLinkedinIn className='text-[#1d4ed8] mr-2' /> LinkedIn
+            </li>
+            <li className='flex items-center text-2xl lg:text-4xl hover:text-blue-500 transition-all duration-[300ms] ease-in-out lg:hover:scale-110'>
+              <FaTwitter className='text-blue-400 mr-2' /> Twitter
+            </li>
+          </ul>
         </div>
       </div>
 
       {/* Bottom div */}
-      <div>
-        <div className='flex gap-5 max-w-screen-xl mx-auto mb-2 items-center'>
+      <div className='bg-zinc-800 py-4'>
+        <div className='flex flex-col md:flex-row gap-2 md:gap-5 max-w-screen-xl mx-auto mb-2 items-center justify-center'>
           <p className='text-sm text-zinc-100 hover:text-white cursor-pointer'>
             2024 Luytens Technology Solutions.
           </p>
-          <p className='text-sm text-zin-100 hover:text-white cursor-pointer'>
+          <p className='text-sm text-zinc-100 hover:text-white cursor-pointer'>
             All rights reserved.
           </p>
           <p className='text-sm text-zinc-100 hover:text-white cursor-pointer'>

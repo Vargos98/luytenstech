@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import One from '../assets/Static/1.png';
 import Two from '../assets/Static/2.png';
@@ -27,19 +26,19 @@ const Work = () => {
   ];
 
   return (
-    <div className="w-full relative mt-10 lg:mt-3 bg-zinc-900 mb-64 lg:mb-52">
+    <div className="w-full relative mt-28 lg:mt-3 bg-zinc-900 mb-64 lg:mb-52">
       {/* Text area */}
       <div className="max-w-screen-xl mx-auto bg-zinc-900 text-center leading-none relative">
         {/* First paragraph with animation */}
         <p
-          className={` text-[6vw] lg:text-[5vw] xl:text-[4.5vw] leading-none tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-36%] translate-y-[165%] opacity-80' : 'translate-x-[-36%] opacity-0'
+          className={` text-[12vw] sm:text-[6vw] lg:text-[5vw] xl:text-[5.5vw] leading-none tracking-tight transition-all duration-[1500ms] ${animateText ? 'translate-x-[-36%] translate-y-[95%] opacity-80' : 'translate-x-[-36%] opacity-0'
             }`}
         >
           Let's
         </p>
-        <h1 className={`text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out`}>work</h1>
+        <h1 className={`text-[40vw] sm:text-[30vw] leading-none font-medium select-none tracking-tight transition-all duration-[3000ms] ease-in-out`}>work</h1>
         <p
-          className={`text-[6vw] lg:text-[5vw] xl:text-[4.5vw] leading-none tracking-tight transition-all text-orange-500 duration-[1500ms] ease-in-out ${animateText ? 'translate-x-[38%] translate-y-[-50%] opacity-100' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
+          className={`text-[12vw] sm:text-[6vw] lg:text-[5vw] xl:text-[5.5vw] leading-none tracking-tight transition-all text-orange-500 duration-[1500ms] ease-in-out ${animateText ? 'lg:translate-x-[35%] translate-x-[25%] translate-y-[-40%] opacity-100' : 'translate-x-[100%] translate-y-[-50%] opacity-0'
             }`}
         >
           Together.
@@ -56,7 +55,7 @@ const Work = () => {
                 key={index}
                 src={elem.url}
                 alt={elem.url}
-                className="w-[16vw] rounded-md absolute transition-all duration-[1500ms] ease-in-out"
+                className="w-[30vw] sm:w-[16vw] rounded-md absolute transition-all duration-[1500ms] ease-in-out"
                 style={{
                   top: elem.top,
                   left: elem.left,
