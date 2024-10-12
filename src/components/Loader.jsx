@@ -51,7 +51,7 @@ const Loader = ({ onLoaderComplete }) => {
       {loaderVisible && (
         <div id="loader" className="fixed z-50 w-full h-full bg-black flex flex-col items-center justify-center p-10">
           <div className="line flex items-center justify-start gap-3">
-            <div id="line1-part1" className="flex items-center gap-3 ml-4 lg:ml-10 opacity-80 top-10 right-[120px]">
+            <div id="line1-part1" className="flex items-center gap-3 ml-4 lg:ml-10 opacity-10">
               <h5 className="text-white text-[7vw] lg:text-[3vw] font-bold">00</h5>
               <h6 className="text-white text-[7vw] lg:text-[3vw] font-bold">- 100</h6>
             </div>
