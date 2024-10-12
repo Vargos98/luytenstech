@@ -48,7 +48,7 @@ const Contact = () => {
             Contact <span className='text-orange-500'>Us</span>
           </h1>
           <p className='text-[4vw] lg:text-[2vw] mb-6 lg:mb-10'>
-            We're here to help you with your tech needs. Feel free to reach out with any questions or inquiries.
+            We're here to help you with your needs. Feel free to reach out with any questions or inquiries.
           </p>
         </div>
 
