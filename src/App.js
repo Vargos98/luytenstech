@@ -8,9 +8,14 @@ import Loader from './components/Loader';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+// import LocomotiveScroll from 'locomotive-scroll';
+
+
+
 
 
 const App = () => {
+  // const locomotiveScroll = new LocomotiveScroll();
   const [isLoading, setIsLoading] = useState(true); // State to control loader visibility
 
   // Function to handle loader completion
