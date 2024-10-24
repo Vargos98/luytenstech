@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../assets/Static/Logo_Luytens.png';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -19,10 +19,10 @@ const Footer = () => {
         <div className='lg:basis-1/2 w-full h-fit mt-4 lg:mt-10'>
           <ul className='flex flex-col gap-4'>
             <li className='flex items-center text-2xl lg:text-4xl hover:text-violet-500 transition-all duration-[300ms] ease-in-out lg:hover:scale-110 '>
-              <FaLinkedinIn className='text-[#1d4ed8] mr-2' /> LinkedIn
+             <a href="https://www.linkedin.com/company/luytens-technology-solutions/mycompany/" className='flex gap-4'><FaLinkedinIn className='text-[#1d4ed8] mr-2' /> LinkedIn</a> 
             </li>
             <li className='flex items-center text-2xl lg:text-4xl hover:text-blue-500 transition-all duration-[300ms] ease-in-out lg:hover:scale-110'>
-              <FaTwitter className='text-blue-400 mr-2' /> Twitter
+              <a href="/" className='flex gap-4'><FaTwitter className='text-blue-400 mr-2' /> Twitter</a>
             </li>
           </ul>
         </div>

@@ -17,7 +17,7 @@ const Work = () => {
 
   // Images data
   const images = [
-    { url: One, top: '50%', left: '50%', isActive: true },
+    { url: One, top: '50%', left: '50%', isActive: false },
     { url: Two, top: '56%', left: '44%', isActive: false },
     { url: Three, top: '45%', left: '56%', isActive: false },
     { url: Four, top: '60%', left: '53%', isActive: false },

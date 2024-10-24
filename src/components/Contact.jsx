@@ -7,6 +7,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [alertVisible, setAlertVisible] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -30,7 +31,10 @@ const Contact = () => {
       'your_user_id' // Replace with your Email.js user ID
     )
     .then((response) => {
-      alert('Message sent successfully!');
+      setAlertVisible(true);
+      setTimeout(() => {
+        setAlertVisible(false);
+      }, 3000); // Hide alert after 3 seconds
       setFormData({ name: '', email: '', message: '' });
     })
     .catch((error) => {
@@ -39,7 +43,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full lg:mt-32 lg:mb-32'>
+    <div className='relative w-full lg:mt-32 lg:mb-32'>
       <div className='max-w-screen-xl mx-auto px-6 py-10 flex flex-col lg:flex-row gap-10 lg:gap-32 mt-10 
       hover:bg-violet-500 rounded-2xl transition-all duration-[300ms] ease-in-out'>
         {/* Left div */}
@@ -94,6 +98,13 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      {/* Alert */}
+      {alertVisible && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-80 text-white text-2xl font-bold z-50">
+          Message sent successfully!
+        </div>
+      )}
     </div>
   );
 };
